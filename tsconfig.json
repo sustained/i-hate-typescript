@@ -1,0 +1,12 @@
+{
+  "compilerOptions": {
+    "target": "es2020",
+    "outDir": "./dist",
+    "baseUrl": ".",
+    "sourceMap": true,
+    "allowSyntheticDefaultImports": true,
+    "types": ["node", "@discordjs/collection", "discord.js", "klasa"]
+  },
+  "include": ["./**/*", "./data/**/*"],
+  "exclude": ["**/node_modules"]
+}
