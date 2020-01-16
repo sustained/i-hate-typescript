@@ -4,7 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "nuke": "npm cache clean --force && rm -rf node_modules && rm -f package_lock.json && npm install && npm build",
+    "build": "tsc -p .",
+    "watch": "tsc -p . -w",
+    "start": "node dist/src/main.js"
   },
   "keywords": [],
   "author": "",
